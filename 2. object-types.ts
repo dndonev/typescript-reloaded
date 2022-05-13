@@ -1,20 +1,27 @@
-class Person {
-    constructor(public firstName: string, public age: number) {
-        
-    }
-}
+const p1: { firstName: string } = {
+    firstName: 'Dobrin'
+};
 
 interface IPerson {
     firstName: string;
-    lastName: string;
+    lastName?: string;
 }
 
-enum EPerson {
-    GoodPerson = '0',
-    BadPerson = '1'
+class Person {
+    firstName = 'Dobrin'
+}
+
+const p2: IPerson = {
+    firstName: 'Donev'
 }
 
 type TPerson = {
     firstName: string;
-    lastName: string;
+}
+
+type TNumberPerson = number;
+
+enum EPerson {
+    GoodPerson = 'G',
+    BadPerson = 'B'
 }
